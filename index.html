@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lorini Foods | Modern Restaurant in Manchester</title>
+<meta name="description" content="Lorini Foods – thoughtfully prepared dishes and warm hospitality in the heart of Manchester.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a href="#home" class="logo">Lorini<span> Foods</span></a>
+    <nav id="links" aria-label="Main">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#reservation">Reservation</a><a href="#contact">Contact</a>
+      <div class="auth-m" data-auth></div>
+    </nav>
+    <div class="nav-r">
+      <div class="auth" data-auth></div>
+      <button class="cart-btn" data-cart aria-label="Open order"><i class="fa-solid fa-bag-shopping"></i><b id="count">0</b></button>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-in">
+    <p class="eyebrow">Manchester · Est. 2016</p>
+    <h1>LORINI FOODS</h1>
+    <p class="tag">Good Food. Beautiful Moments.</p>
+    <p class="lead">Experience thoughtfully prepared dishes, warm hospitality, and unforgettable moments in the heart of Manchester.</p>
+    <div class="btns"><a href="#menu" class="btn gold">View Menu</a><a href="#reservation" class="btn ghost">Reserve a Table</a></div>
+  </div>
+  <a href="#about" class="scroll" aria-label="Scroll down"><i class="fa-solid fa-chevron-down"></i></a>
+</section>
+
+<section class="sec" id="about"><div class="wrap split">
+  <div class="reveal img-frame"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=900&q=75" alt="Lorini Foods dining room" loading="lazy"></div>
+  <div class="reveal">
+    <p class="eyebrow dark">Our Story</p>
+    <h2>A Taste Worth Remembering</h2>
+    <p>Tucked away on King Street, Lorini Foods brings together fresh seasonal ingredients, modern cooking and a genuinely welcoming atmosphere. Our kitchen takes inspiration from the Mediterranean and the best of British produce, turning simple ingredients into dishes you will talk about long after dessert.</p>
+    <div class="cards">
+      <div class="card"><i class="fa-solid fa-leaf"></i><h3>Fresh Ingredients</h3><p>Sourced daily from local suppliers.</p></div>
+      <div class="card"><i class="fa-solid fa-utensils"></i><h3>Passionate Chefs</h3><p>Craft and creativity on every plate.</p></div>
+      <div class="card"><i class="fa-solid fa-heart"></i><h3>Warm Hospitality</h3><p>Treated like family from the door.</p></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="sec dark" id="menu"><div class="wrap">
+  <div class="head reveal"><p class="eyebrow">Order Online or Dine In</p><h2>Our Menu</h2></div>
+  <div class="tabs reveal" id="tabs" role="tablist"></div>
+  <div class="menu-grid" id="menu-grid"></div>
+</div></section>
+
+<section class="sec" id="why"><div class="wrap">
+  <div class="head reveal"><p class="eyebrow dark">Why Lorini</p><h2>Why Choose Us</h2></div>
+  <div class="why">
+    <div class="reveal"><i class="fa-solid fa-carrot"></i><h3>Fresh Ingredients</h3><p>Carefully selected ingredients prepared fresh every day.</p></div>
+    <div class="reveal"><i class="fa-solid fa-kitchen-set"></i><h3>Expert Chefs</h3><p>Creative dishes prepared by passionate chefs.</p></div>
+    <div class="reveal"><i class="fa-solid fa-champagne-glasses"></i><h3>Elegant Atmosphere</h3><p>A comfortable space designed for memorable moments.</p></div>
+    <div class="reveal"><i class="fa-solid fa-bell-concierge"></i><h3>Friendly Service</h3><p>Warm hospitality from the moment you arrive.</p></div>
+  </div>
+</div></section>
+
+<section class="sec beige" id="gallery"><div class="wrap">
+  <div class="head reveal"><p class="eyebrow dark">Gallery</p><h2>A Look Inside</h2></div>
+  <div class="gallery" id="gallery-grid"></div>
+</div></section>
+
+<section class="sec dark" id="reservation"><div class="wrap split">
+  <div class="reveal">
+    <p class="eyebrow">Reservations</p><h2>Reserve a Table</h2>
+    <p>Join us for lunch, dinner or a special celebration. For parties of 10 or more, please call us on +44 161 555 2847.</p>
+  </div>
+  <form class="form reveal" id="res-form" novalidate>
+    <label>Full Name<input name="name" required autocomplete="name"><small></small></label>
+    <label>Email<input name="email" type="email" required autocomplete="email"><small></small></label>
+    <label>Phone Number<input name="phone" type="tel" required autocomplete="tel"><small></small></label>
+    <div class="row3">
+      <label>Date<input name="date" type="date" id="date" required><small></small></label>
+      <label>Time<select name="time" id="time" required><option value="">Select</option></select><small></small></label>
+      <label>Guests<select name="guests" required></select><small></small></label>
+    </div>
+    <label>Special Requests<textarea name="notes" rows="3" placeholder="Allergies, celebrations, seating…"></textarea></label>
+    <button class="btn gold" type="submit">Confirm Reservation</button>
+  </form>
+</div></section>
+
+<section class="sec" id="reviews"><div class="wrap">
+  <div class="head reveal"><p class="eyebrow dark">Reviews</p><h2>Guest Love</h2></div>
+  <div class="quotes">
+    <blockquote class="reveal"><div class="stars">★★★★★</div>“Absolutely beautiful food and wonderful service. The atmosphere was perfect for our evening.”<cite>— Sarah M.</cite></blockquote>
+    <blockquote class="reveal"><div class="stars">★★★★★</div>“The steak was fantastic and the staff were incredibly welcoming.”<cite>— James R.</cite></blockquote>
+    <blockquote class="reveal"><div class="stars">★★★★★</div>“One of the nicest dining experiences we've had in Manchester.”<cite>— Olivia T.</cite></blockquote>
+  </div>
+  <p class="note">Demo testimonials from fictional guests.</p>
+</div></section>
+
+<section class="sec beige" id="contact"><div class="wrap split">
+  <div class="reveal">
+    <p class="eyebrow dark">Find Us</p><h2>Visit Lorini Foods</h2>
+    <ul class="info">
+      <li><i class="fa-solid fa-location-dot"></i><span>24 King Street,<br>Manchester, M2 6AY,<br>United Kingdom</span></li>
+      <li><i class="fa-solid fa-phone"></i><a href="tel:+441615552847">+44 161 555 2847</a></li>
+      <li><i class="fa-solid fa-envelope"></i><a href="mailto:hello@lorinifoods.co.uk">hello@lorinifoods.co.uk</a></li>
+    </ul>
+    <table class="hours">
+      <tr><td>Monday – Thursday</td><td>11:00 AM – 10:00 PM</td></tr>
+      <tr><td>Friday – Saturday</td><td>11:00 AM – 11:30 PM</td></tr>
+      <tr><td>Sunday</td><td>12:00 PM – 9:00 PM</td></tr>
+    </table>
+  </div>
+  <div class="map reveal"><iframe title="Map of Lorini Foods, King Street, Manchester" loading="lazy" src="https://www.google.com/maps?q=King+Street+Manchester+M2+6AY&output=embed"></iframe></div>
+</div></section>
+</main>
+
+<footer class="foot"><div class="wrap">
+  <div class="foot-g">
+    <div><a href="#home" class="logo">Lorini<span> Foods</span></a><p>Good Food. Beautiful Moments.</p>
+      <div class="social"><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a></div></div>
+    <div><h4>Explore</h4><a href="#home">Home</a><a href="#about">About</a><a href="#menu">Menu</a><a href="#reservation">Reservation</a><a href="#contact">Contact</a></div>
+    <div><h4>Contact</h4><p>24 King Street, Manchester, M2 6AY</p><p>+44 161 555 2847</p><p>hello@lorinifoods.co.uk</p></div>
+  </div>
+  <p class="copy">© 2026 Lorini Foods. All rights reserved.</p>
+</div></footer>
+
+<!-- Cart drawer -->
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer" aria-label="Your order">
+  <div class="drawer-h"><h3>Your Order</h3><button data-close aria-label="Close"><i class="fa-solid fa-xmark"></i></button></div>
+  <div class="drawer-b" id="cart-items"></div>
+  <div class="drawer-f"><div class="sub"><span>Subtotal</span><span id="sub">£0.00</span></div><div class="tot"><span>Total</span><span id="total">£0.00</span></div>
+    <button class="btn gold full" id="checkout">Checkout</button></div>
+</aside>
+
+<!-- Modals -->
+<div class="modal" id="m-login"><div class="box"><button class="x" data-close aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+  <h3>Welcome Back</h3><form id="login-form" novalidate>
+  <label>Email<input name="email" type="email" required><small></small></label>
+  <label>Password<input name="password" type="password" required><small></small></label>
+  <div class="opts"><label class="chk"><input type="checkbox" name="remember"> Remember me</label><a href="#" id="forgot">Forgot password?</a></div>
+  <button class="btn gold full">Login</button></form>
+  <p class="sw">New here? <a href="#" data-switch="m-signup">Create Account</a></p></div></div>
+
+<div class="modal" id="m-signup"><div class="box"><button class="x" data-close aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+  <h3>Create Account</h3><form id="signup-form" novalidate>
+  <label>Full Name<input name="name" required><small></small></label>
+  <label>Email<input name="email" type="email" required><small></small></label>
+  <label>Phone<input name="phone" type="tel" required><small></small></label>
+  <label>Password<input name="password" type="password" minlength="6" required><small></small></label>
+  <label>Confirm Password<input name="confirm" type="password" data-match="password" required><small></small></label>
+  <button class="btn gold full">Create Account</button></form>
+  <p class="sw">Already a member? <a href="#" data-switch="m-login">Login</a></p>
+  <p class="demo">Demo only: accounts are stored in your browser’s localStorage and are not secure.</p></div></div>
+
+<div class="modal" id="m-msg"><div class="box center"><button class="x" data-close aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+  <div class="tick"><i class="fa-solid fa-check"></i></div><h3 id="msg-t"></h3><p id="msg-p"></p><button class="btn gold" data-close>Close</button></div></div>
+
+<div class="lightbox" id="lightbox"><button class="x" data-close aria-label="Close"><i class="fa-solid fa-xmark"></i></button><img alt=""></div>
+<div class="toast" id="toast" role="status"></div>
+<script src="js/script.js"></script>
+</body>
+</html>
